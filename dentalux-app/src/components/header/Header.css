@@ -1,0 +1,38 @@
+header {
+  font-family: var(--textFont);
+  background-color: white;
+}
+
+header #mobile-nav {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo-mobile {
+  width: 130px;
+}
+
+#mobile-nav .end-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+}
+
+button.mobile-services {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--azure);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 64px;
+}
+
+button.mobile-menu-button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: var(--azure);
+  border: none;
+}
