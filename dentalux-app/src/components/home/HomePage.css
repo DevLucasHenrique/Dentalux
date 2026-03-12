@@ -1,5 +1,6 @@
 /* HERO */
 section#hero {
+  font-family: var(--textFont);
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
@@ -48,6 +49,15 @@ section#hero div.hero-nav button.redirect-services {
   border-radius: 48px;
   border: none;
   padding: 8px 12px;
+  transition: 0.3s ease;
+}
+
+section#hero div.hero-nav button:hover {
+  transform: scale(1.05);
+}
+
+section#hero div.hero-nav button:active {
+  transform: scale(0.9);
 }
 
 section#hero div.hero-nav button.schedule {
@@ -60,9 +70,11 @@ section#hero div.hero-nav button.schedule {
   border: none;
   padding: 8px 14px;
   font-size: 0.8em;
+  transition: 0.3s ease;
 }
 
 section#services {
+  font-family: var(--textFont);
   gap: 24px;
   padding: 24px;
   display: flex;
@@ -86,6 +98,7 @@ section#services div.services-container {
 }
 
 section#services .service {
+  font-family: var(--textFont);
   padding: 8px;
   border-radius: 8px;
   width: 40%;
@@ -122,6 +135,6 @@ section#services .service .body {
 }
 
 section#services .service .icon {
-  width: 34px;
+  width: 30px;
   margin-bottom: 12px;
 }
