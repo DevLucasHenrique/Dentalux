@@ -1,0 +1,62 @@
+/* HERO */
+section#hero {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 32px 24px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+section#hero .main-title {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+section#hero .main-title .emp-dot {
+  color: var(--lightBlue);
+  font-weight: 700;
+  margin-left: -3%;
+  padding: 0px;
+}
+
+section#hero .slogan {
+  font-size: 0.8em;
+  max-width: 90%;
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+div.hero-nav {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+
+section#hero div.hero-nav button.redirect-services {
+  font-family: var(--textFont);
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: white;
+  color: var(--azure);
+  border-radius: 48px;
+  border: none;
+  padding: 8px 12px;
+}
+
+section#hero div.hero-nav button.schedule {
+  font-family: var(--textFont);
+  background-color: var(--azure);
+  font-weight: 300;
+  color: white;
+  border-radius: 48px;
+  width: fit-content;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.8em;
+}

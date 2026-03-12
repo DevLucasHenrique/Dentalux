@@ -21,8 +21,9 @@ header img.logo-mobile {
 }
 
 button.mobile-services {
+  font-family: var(--textFont);
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   background-color: var(--azure);
   padding: 6px 12px;
