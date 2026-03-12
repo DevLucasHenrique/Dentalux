@@ -25,6 +25,7 @@ section#hero .main-title .emp-dot {
 }
 
 section#hero .slogan {
+  color: rgba(255, 255, 255, 0.801);
   font-size: 0.8em;
   max-width: 90%;
   text-align: start;
@@ -59,4 +60,68 @@ section#hero div.hero-nav button.schedule {
   border: none;
   padding: 8px 14px;
   font-size: 0.8em;
+}
+
+section#services {
+  gap: 24px;
+  padding: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+section#services .services-title {
+  font-family: var(--textFont);
+  text-align: center;
+  font-size: 1.4em;
+  color: var(--purple);
+  font-weight: 600;
+}
+
+section#services div.services-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+section#services .service {
+  padding: 8px;
+  border-radius: 8px;
+  width: 40%;
+  gap: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.service.purple {
+  background-color: var(--lightPurple);
+  color: var(--purple);
+}
+
+.service.blue {
+  background-color: var(--pastelBlue);
+  color: var(--darkBlue);
+}
+
+section#services .service .body {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0px;
+}
+
+.service .body .label {
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+.service .body .service-name {
+  margin-top: -5px;
+  font-weight: 700;
+}
+
+section#services .service .icon {
+  width: 34px;
+  margin-bottom: 12px;
 }

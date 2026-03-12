@@ -71,15 +71,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="services">
+      <section id="services"> 
         <h1 className="services-title">Nossos Serviços: </h1>
         <div className="services-container">
           {SERVICES.map((service) => {
             return (
               <div className={`service ${service.color}`}>
-                <img src={service.icon} alt="Service Icon" />
-                <h5 className="label">Agende sua</h5>
-                <h4 className="service-name">Consulta</h4>
+                <img className="icon" src={service.icon} alt="Service Icon" />
+                <div className="body">
+                  <h5 className="label">Agende sua</h5>
+                  <h4 className="service-name">Consulta</h4>
+                </div>
               </div>
             );
           })}
