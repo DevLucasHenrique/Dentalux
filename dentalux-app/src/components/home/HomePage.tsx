@@ -13,6 +13,16 @@ export default function HomePage() {
           <button className="schedule">Agende sua consulta</button>
         </div>
       </section>
+
+      <section id='services'>
+        <h1 className='services-title'>Nossos Serviços: </h1>
+        <div className='services-container'>
+          <div className="service">
+            <h5 className='subtitle'>Agende sua</h5>
+            <h4 className='service-name'>Consulta</h4>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
