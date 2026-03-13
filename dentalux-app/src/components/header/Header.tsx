@@ -5,6 +5,7 @@ import './Header.css'
 
 export function Header() {
   return (
+
     <header>
       <nav id="mobile-nav">
         <img src={logoMobile} className="logo-mobile" alt="Logo" />

@@ -16,37 +16,37 @@ interface Service {
 
 const SERVICES: Service[] = [
   {
-    color: 'purple',
+    color: "purple",
     icon: stethoscopeIcon,
     label: "Agende sua",
     name: "Consulta",
   },
   {
-    color: 'purple',
+    color: "purple",
     icon: labIcon,
     label: "Agende seus",
     name: "Exames",
   },
   {
-    color: 'purple',
+    color: "purple",
     icon: knifeIcon,
     label: "Agende sua",
     name: "Cirurgia",
   },
   {
-    color: 'blue',
+    color: "blue",
     icon: toothIcon,
     label: "Agende sua avaliação",
     name: "Odontológica",
   },
   {
-    color: 'blue',
+    color: "blue",
     icon: cleanToothIcon,
     label: "Agende seu",
     name: "Clareamento",
   },
   {
-    color: 'blue',
+    color: "blue",
     icon: implantIcon,
     label: "Agende seu",
     name: "Implante",
@@ -71,7 +71,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="services"> 
+      <section id="services">
         <h1 className="services-title">Nossos Serviços: </h1>
         <div className="services-container">
           {SERVICES.map((service) => {
@@ -79,12 +79,25 @@ export default function HomePage() {
               <div className={`service ${service.color}`}>
                 <img className="icon" src={service.icon} alt="Service Icon" />
                 <div className="body">
-                  <h5 className="label">Agende sua</h5>
-                  <h4 className="service-name">Consulta</h4>
+                  <h5 className="label">{service.label}</h5>
+                  <h4 className="service-name">{service.name}</h4>
                 </div>
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section id="qualities">
+        <div className="quality">
+          <img src="" alt="" />
+          <div className="text">
+            <h3 className="quality-name">Pontualidade</h3>
+            <p className="description">
+              Respeitamos o seu tempo. Sem filas, sem espera. Aqui cada consulta
+              começa no horário marcado.
+            </p>
+          </div>
         </div>
       </section>
     </>
