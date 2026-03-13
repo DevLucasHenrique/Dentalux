@@ -14,6 +14,8 @@ import peopleIcon from "../../assets/icons/people.svg";
 import medalIcon from "../../assets/icons/medal.svg";
 import lightIcon from "../../assets/icons/light.svg";
 
+import starIcon from '../../assets/icons/star.svg'
+
 interface Service {
   color: string;
   icon: string;
@@ -25,6 +27,12 @@ interface Quality {
   icon: string;
   name: string;
   description: string;
+}
+
+interface Testimonial {
+  rating: number;
+  text: string;
+  date: string;
 }
 
 const SERVICES: Service[] = [
@@ -93,6 +101,24 @@ const QUALITIES: Quality[] = [
   },
 ];
 
+const TESTIMONIALS: Testimonial[] = [
+  {
+    rating: 5,
+    text: '"Tinha muito medo de dentista desde criança e sempre adiava as consultas. Uma amiga me indicou a Dentalux e foi a melhor decisão que tomei. A equipe foi extremamente paciente, explicou cada procedimento com calma e eu me senti segura do início ao fim. O ambiente é acolhedor e os profissionais são atenciosos de verdade. Hoje venho a cada seis meses sem nenhum receio e recomendo para todo mundo." — Ana Paula, 34 anos',
+    date: "12 de dezembro de 2025",
+  },
+  {
+    rating: 5,
+    text: "Fiz clareamento e facetas aqui e o resultado superou todas as minhas expectativas. Meu sorriso mudou completamente e minha autoestima foi junto. O atendimento é impecável, o ambiente é moderno e os profissionais são muito atenciosos e honestos. Não indico só para amigos, indico para — Carlos Eduardo, 41 anos",
+    date: "23 de maio de 2023",
+  },
+  {
+    rating: 5,
+    text: 'Minha família inteira é paciente da Dentalux — eu, meu marido e meus dois filhos. O que me conquistou foi o cuidado especial que têm com as . Meu filho de 7 anos que chorava só de ouvir a palavra dentista hoje entra sorrindo no consultório. Isso não tem preço."— Mariana Souza, 29 anos',
+    date: "2 de janeiro de 2026",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -135,10 +161,25 @@ export default function HomePage() {
               <img src={quality.icon} className="icon" alt="Icon" />
               <div className="text">
                 <h3 className="quality-name">{quality.name}</h3>
-                <p className="description">
-                  {quality.description}
-                </p>
+                <p className="description">{quality.description}</p>
               </div>
+            </div>
+          );
+        })}
+      </section>
+      <section id="testimonials">
+        {TESTIMONIALS.map((testimonial) => {
+          return (
+            <div className="testimonial">
+              <div className="rating-container">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <img src={starIcon} className="star" key={i} alt="Star" />
+                ))}
+              </div>
+              <p className="text">
+                {testimonial.text}
+              </p>
+              <h6 className="date">{testimonial.date}</h6>
             </div>
           );
         })}
