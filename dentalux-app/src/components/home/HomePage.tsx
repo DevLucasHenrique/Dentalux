@@ -1,5 +1,6 @@
 import "./HomePage.css";
 
+// * SERVICES ICONS *//
 import toothIcon from "../../assets/icons/tooth.svg";
 import cleanToothIcon from "../../assets/icons/clean-tooth.svg";
 import labIcon from "../../assets/icons/lab.svg";
@@ -7,11 +8,23 @@ import knifeIcon from "../../assets/icons/knife.svg";
 import implantIcon from "../../assets/icons/implant.svg";
 import stethoscopeIcon from "../../assets/icons/stethoscope.svg";
 
+//* QUALITIES ICONS *//
+import clockIcon from "../../assets/icons/clock.svg";
+import peopleIcon from "../../assets/icons/people.svg";
+import medalIcon from "../../assets/icons/medal.svg";
+import lightIcon from "../../assets/icons/light.svg";
+
 interface Service {
   color: string;
   icon: string;
   label: string;
   name: string;
+}
+
+interface Quality {
+  icon: string;
+  name: string;
+  description: string;
 }
 
 const SERVICES: Service[] = [
@@ -53,6 +66,33 @@ const SERVICES: Service[] = [
   },
 ];
 
+const QUALITIES: Quality[] = [
+  {
+    icon: clockIcon,
+    name: "Pontualidade",
+    description:
+      "Respeitamos o seu tempo. Sem filas, sem espera. Aqui cada consulta começa no horário marcado.",
+  },
+  {
+    icon: peopleIcon,
+    name: "Atendimento",
+    description:
+      "Cada paciente é único e tratado com atenção individual. Você nunca será apenas um número para nós.",
+  },
+  {
+    icon: medalIcon,
+    name: "Profissionalismo",
+    description:
+      "Equipe com mais de 15 anos de experiência no mercado, sempre atualizada com as mais modernas técnicas odontológicas.",
+  },
+  {
+    icon: lightIcon,
+    name: "Tecnologia",
+    description:
+      "Equipamentos modernos para diagnósticos mais precisos e tratamentos menos invasivos, garantindo mais conforto e segurança.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -89,16 +129,19 @@ export default function HomePage() {
       </section>
 
       <section id="qualities">
-        <div className="quality">
-          <img src="" alt="" />
-          <div className="text">
-            <h3 className="quality-name">Pontualidade</h3>
-            <p className="description">
-              Respeitamos o seu tempo. Sem filas, sem espera. Aqui cada consulta
-              começa no horário marcado.
-            </p>
-          </div>
-        </div>
+        {QUALITIES.map((quality) => {
+          return (
+            <div className="quality">
+              <img src={quality.icon} className="icon" alt="Icon" />
+              <div className="text">
+                <h3 className="quality-name">{quality.name}</h3>
+                <p className="description">
+                  {quality.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </section>
     </>
   );
