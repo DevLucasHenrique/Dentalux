@@ -218,3 +218,12 @@ export default function HomePage() {
     </>
   );
 }
+
+/*
+<section className="cta">
+  <h2 className="cta-title">
+    Pronto para transformar seu sorriso?
+  </h2>
+  <p className="cta-text"></p>
+</section>
+*/
