@@ -140,24 +140,6 @@ section#services .service .icon {
   margin-bottom: 12px;
 }
 
-/* 
-<section id="qualities">
-  {QUALITIES.map((quality) => {
-    return (
-      <div className="quality">
-        <img src={quality.icon} alt="Icon" />
-        <div className="text">
-          <h3 className="quality-name">{quality.name}</h3>
-          <p className="description">
-            {quality.description}
-          </p>
-        </div>
-      </div>
-    );
-  })}
-</section>
-*/
-
 section#qualities {
   display: flex;
   flex-flow: row wrap;
@@ -213,6 +195,16 @@ section#testimonials {
   gap: 32px;
 }
 
+section#testimonials .testimonials-title {
+  font-family: var(--logoFont);
+  text-align: start;
+  font-weight: 500;
+  color: var(--azure);
+  padding-inline: 12px;
+  font-size: 1.85em;
+  margin-bottom: 12px;
+}
+
 section#testimonials .testimonial {
   gap: 24px;
   border-radius: 24px;
@@ -244,3 +236,34 @@ section#testimonials .testimonial {
 .star {
   width: 30px;
 }
+
+/*
+<section id="our-history">
+        <div className="head">
+          <button className="nav-green"></button>
+          <button className="nav-yellow"></button>
+          <button className="nav-red"></button>
+        </div>
+        <div className="body">
+          <h2 className="history-title">Nossa História</h2>
+          <p className="history-text">
+            Fundada em 2008, a Dentalux nasceu com um propósito claro: oferecer
+            odontologia de excelência sem abrir mão do cuidado humano. Tudo
+            começou em um pequeno consultório no centro de São Paulo, com uma
+            equipe de três profissionais e um compromisso simples — tratar cada
+            paciente como único. Com o tempo, a dedicação falou mais alto que
+            qualquer propaganda, e a Dentalux cresceu pelo que sempre valorizou:
+            a indicação de quem já viveu a experiência. Hoje, com mais de 15
+            anos de história e milhares de sorrisos transformados, seguimos
+            fiéis à mesma filosofia do primeiro dia. Investimos constantemente
+            em tecnologia de ponta, em capacitação da nossa equipe e em um
+            ambiente pensado para que você se sinta confortável e seguro em cada
+            visita.
+          </p>
+        </div>
+        <div className="foot">
+          <p className="ad">Esta é apenas uma descrição fictícia.</p>
+        </div>
+      </section>
+*/
+

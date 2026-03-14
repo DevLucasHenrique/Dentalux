@@ -14,7 +14,7 @@ import peopleIcon from "../../assets/icons/people.svg";
 import medalIcon from "../../assets/icons/medal.svg";
 import lightIcon from "../../assets/icons/light.svg";
 
-import starIcon from '../../assets/icons/star.svg'
+import starIcon from "../../assets/icons/star.svg";
 
 interface Service {
   color: string;
@@ -168,6 +168,9 @@ export default function HomePage() {
         })}
       </section>
       <section id="testimonials">
+        <h2 className="testimonials-title">
+          O que nossos <strong>clientes</strong> dizem
+        </h2>
         {TESTIMONIALS.map((testimonial) => {
           return (
             <div className="testimonial">
@@ -176,13 +179,38 @@ export default function HomePage() {
                   <img src={starIcon} className="star" key={i} alt="Star" />
                 ))}
               </div>
-              <p className="text">
-                {testimonial.text}
-              </p>
+              <p className="text">{testimonial.text}</p>
               <h6 className="date">{testimonial.date}</h6>
             </div>
           );
         })}
+      </section>
+      <section id="our-history">
+        <div className="head">
+          <button className="nav-green"></button>
+          <button className="nav-yellow"></button>
+          <button className="nav-red"></button>
+        </div>
+        <div className="body">
+          <h2 className="history-title">Nossa História</h2>
+          <p className="history-text">
+            Fundada em 2008, a Dentalux nasceu com um propósito claro: oferecer
+            odontologia de excelência sem abrir mão do cuidado humano. Tudo
+            começou em um pequeno consultório no centro de São Paulo, com uma
+            equipe de três profissionais e um compromisso simples — tratar cada
+            paciente como único. Com o tempo, a dedicação falou mais alto que
+            qualquer propaganda, e a Dentalux cresceu pelo que sempre valorizou:
+            a indicação de quem já viveu a experiência. Hoje, com mais de 15
+            anos de história e milhares de sorrisos transformados, seguimos
+            fiéis à mesma filosofia do primeiro dia. Investimos constantemente
+            em tecnologia de ponta, em capacitação da nossa equipe e em um
+            ambiente pensado para que você se sinta confortável e seguro em cada
+            visita.
+          </p>
+        </div>
+        <div className="foot">
+          <p className="ad">Esta é apenas uma descrição fictícia.</p>
+        </div>
       </section>
     </>
   );
