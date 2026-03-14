@@ -186,32 +186,35 @@ export default function HomePage() {
         })}
       </section>
       <section id="our-history">
-        <div className="head">
-          <button className="nav-green"></button>
-          <button className="nav-yellow"></button>
-          <button className="nav-red"></button>
-        </div>
-        <div className="body">
-          <h2 className="history-title">Nossa História</h2>
-          <p className="history-text">
-            Fundada em 2008, a Dentalux nasceu com um propósito claro: oferecer
-            odontologia de excelência sem abrir mão do cuidado humano. Tudo
-            começou em um pequeno consultório no centro de São Paulo, com uma
-            equipe de três profissionais e um compromisso simples — tratar cada
-            paciente como único. Com o tempo, a dedicação falou mais alto que
-            qualquer propaganda, e a Dentalux cresceu pelo que sempre valorizou:
-            a indicação de quem já viveu a experiência. Hoje, com mais de 15
-            anos de história e milhares de sorrisos transformados, seguimos
-            fiéis à mesma filosofia do primeiro dia. Investimos constantemente
-            em tecnologia de ponta, em capacitação da nossa equipe e em um
-            ambiente pensado para que você se sinta confortável e seguro em cada
-            visita.
-          </p>
-        </div>
-        <div className="foot">
-          <p className="ad">Esta é apenas uma descrição fictícia.</p>
+        <div className="window">
+          <div className="head">
+            <button className="window-nav-button nav-red"></button>
+            <button className="window-nav-button nav-yellow"></button>
+            <button className="window-nav-button nav-green"></button>
+          </div>
+          <div className="body">
+            <h2 className="history-title">Nossa História</h2>
+            <p className="history-text">
+              Fundada em 2008, a Dentalux nasceu com um propósito claro: oferecer
+              odontologia de excelência sem abrir mão do cuidado humano. Tudo
+              começou em um pequeno consultório no centro de São Paulo, com uma
+              equipe de três profissionais e um compromisso simples — tratar cada
+              paciente como único. Com o tempo, a dedicação falou mais alto que
+              qualquer propaganda, e a Dentalux cresceu pelo que sempre valorizou:
+              a indicação de quem já viveu a experiência. Hoje, com mais de 15
+              anos de história e milhares de sorrisos transformados, seguimos
+              fiéis à mesma filosofia do primeiro dia. Investimos constantemente
+              em tecnologia de ponta, em capacitação da nossa equipe e em um
+              ambiente pensado para que você se sinta confortável e seguro em cada
+              visita.
+            </p>
+          </div>
+          <div className="foot">
+            <p className="ad">Esta é apenas uma descrição fictícia.</p>
+          </div>
         </div>
       </section>
+      
     </>
   );
 }

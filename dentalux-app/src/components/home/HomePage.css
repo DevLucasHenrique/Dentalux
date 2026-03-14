@@ -267,3 +267,77 @@ section#testimonials .testimonial {
       </section>
 */
 
+section#our-history {
+  background-color: #f4f4f4;
+  padding: 32px 24px;
+}
+
+section#our-history div.window {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px 12px;
+  border-radius: 24px;
+}
+
+section#our-history div.window .head {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.head .window-nav-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  transition: 0.09s ease;
+  background-color: #cccccc3d;
+}
+
+.window-nav-button.nav-green:hover {
+  background-color: #00bf63;
+}
+
+.window-nav-button.nav-yellow:hover {
+  background-color: #ffde59;
+}
+
+.window-nav-button.nav-red:hover {
+  background-color: #ff3131;
+}
+
+div.window .body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  font-family: var(--textFont);
+  color: #545454;
+}
+
+div.window .body .history-title {
+  font-weight: 700;
+  font-size: 1.4em;
+  font-family: var(--textFont);
+  color: #545454;
+}
+
+div.window .body .history-text {
+  font-weight: 300;
+  font-size: 0.7em;
+  font-family: var(--textFont);
+  color: #545454;
+}
+
+div.window .foot {
+  margin-top: 12px;
+}
+
+div.window .foot .ad {
+  font-weight: 300;
+  font-size: 0.5em;
+  font-family: var(--textFont);
+  color: #303030;
+}
