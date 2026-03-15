@@ -1,5 +1,5 @@
 section#testimonials {
-  font-family: var(--textLogo);
+  font-family: var(--textFont);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -24,7 +24,6 @@ section#testimonials .testimonial {
   display: flex;
   flex-flow: column nowrap;
   padding: 32px 24px;
-  
   outline: 1px solid lightgray;
   color: #545454;
 }

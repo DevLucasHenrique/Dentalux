@@ -73,3 +73,38 @@ section#hero div.hero-nav button.schedule {
   transition: 0.3s ease;
 }
 
+@media screen and (min-width: 768px) {
+  section#hero {
+    gap: 18px;
+    padding: 64px 32px;
+  }
+
+  section#hero .main-title {
+    font-size: 4em;
+  }
+
+  section#hero .main-title .emp-dot {
+    color: var(--lightBlue);
+    font-weight: 700;
+    margin-left: -2%;
+    padding: 0px;
+  }
+
+  section#hero .slogan {
+    font-size: 1.2em;
+  }
+
+  div.hero-nav {
+    gap: 12px;
+  }
+
+  section#hero div.hero-nav button.redirect-services {
+    font-size: 1.2em;
+    padding: 12px 24px;
+  }
+
+  section#hero div.hero-nav button.schedule {
+    font-size: 1.2em;
+    padding: 12px 32px;
+  }
+}

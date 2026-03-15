@@ -57,13 +57,24 @@ header {
   opacity: 0;
 }
 
-.menu.open .mobile-link:nth-child(1) { animation-delay: 0.15s; }
-.menu.open .mobile-link:nth-child(2) { animation-delay: 0.22s; }
-.menu.open .mobile-link:nth-child(3) { animation-delay: 0.29s; }
-.menu.open .mobile-link:nth-child(4) { animation-delay: 0.36s; }
-.menu.open .mobile-link:nth-child(5) { animation-delay: 0.43s; }
-.menu.open .mobile-link:nth-child(6) { animation-delay: 0.50s; }
-
+.menu.open .mobile-link:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.menu.open .mobile-link:nth-child(2) {
+  animation-delay: 0.22s;
+}
+.menu.open .mobile-link:nth-child(3) {
+  animation-delay: 0.29s;
+}
+.menu.open .mobile-link:nth-child(4) {
+  animation-delay: 0.36s;
+}
+.menu.open .mobile-link:nth-child(5) {
+  animation-delay: 0.43s;
+}
+.menu.open .mobile-link:nth-child(6) {
+  animation-delay: 0.5s;
+}
 
 .menu {
   display: flex;
@@ -76,18 +87,6 @@ header {
   height: 100%;
   position: absolute;
   width: 100dvw;
-}
-
-.menu button.login {
-  font-family: var(--logoFont);
-  background-color: var(--darkBlue);
-  width: 55%;
-  padding: 12px;
-  color: white;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 8px;
-  font-weight: 500;
 }
 
 .menu .mobile-links {
@@ -130,6 +129,16 @@ button.mobile-services {
   padding: 6px 12px;
   border: none;
   border-radius: 64px;
+  transition: 0.2s ease;
+}
+
+button.mobile-services:hover {
+  transform: scale(1.05);
+}
+
+button.mobile-services:active {
+  transform: scale(0.85);
+  transition: 0.1s ease-in;
 }
 
 .mobile-menu-button.normal {
@@ -143,7 +152,7 @@ button.mobile-services {
 button.mobile-menu-button {
   font-size: 1.4rem;
   background-color: transparent;
-  color: var(--azure);  
+  color: var(--azure);
   border: none;
   transition: 0.2s ease-out;
 }
@@ -164,7 +173,7 @@ button.mobile-menu-button:active {
 .menu .mobile-link:hover {
   color: black;
   transform: translateX(6px);
-  font-size: 1.9em
+  font-size: 1.9em;
 }
 
 .menu .mobile-link::after {
@@ -175,4 +184,30 @@ button.mobile-menu-button:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.315);
   margin-bottom: 12px;
   padding-block: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  header img.logo-mobile {
+    width: 150px;
+  }
+
+  header #mobile-nav {
+    padding: 18px;
+  }
+
+  button.mobile-menu-button {
+    font-size: 1.68rem;
+  }
+
+  button.mobile-services {
+    font-size: 1em;
+  }
+
+  .menu {
+    padding: 32px 32px;
+  }
+
+  .menu .mobile-links {
+    gap: 32px;
+  }
 }
