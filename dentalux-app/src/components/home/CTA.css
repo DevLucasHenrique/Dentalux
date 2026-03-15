@@ -1,0 +1,73 @@
+section#cta {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  background-color: #0e2a3a;
+  padding: 24px;
+  color: white;
+}
+
+section#cta .cta-title {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.cta-title span.emp {
+  color: var(--lightBlue);
+  font-weight: 700;
+}
+
+section#cta .cta-text {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+section#cta .cta-button {
+  background-color: var(--azure);
+  color: white;
+  padding: 12px;
+  border-radius: 24px;
+  border: none;
+  font-family: var(--textFont);
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(300%) skewX(-20deg);
+  }
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-100%) skewX(-20deg);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+
+.cta-button:hover::after {
+  animation: shine 0.55s ease forwards;
+}

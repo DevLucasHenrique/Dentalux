@@ -1,4 +1,8 @@
 import "./HomePage.css";
+import type { Service, Testimonial, Quality } from "../../types";
+
+import { CTA } from "./CTA";
+import { Testimonials } from "./Testimonials";
 
 // * SERVICES ICONS *//
 import toothIcon from "../../assets/icons/tooth.svg";
@@ -13,27 +17,8 @@ import clockIcon from "../../assets/icons/clock.svg";
 import peopleIcon from "../../assets/icons/people.svg";
 import medalIcon from "../../assets/icons/medal.svg";
 import lightIcon from "../../assets/icons/light.svg";
-
-import starIcon from "../../assets/icons/star.svg";
-
-interface Service {
-  color: string;
-  icon: string;
-  label: string;
-  name: string;
-}
-
-interface Quality {
-  icon: string;
-  name: string;
-  description: string;
-}
-
-interface Testimonial {
-  rating: number;
-  text: string;
-  date: string;
-}
+import { Qualities } from "./Qualities";
+import { Services } from "./Services";
 
 const SERVICES: Service[] = [
   {
@@ -122,7 +107,7 @@ const TESTIMONIALS: Testimonial[] = [
 export default function HomePage() {
   return (
     <>
-      <section id="hero">
+      <section id="hero"> 
         <h1 className="main-title">
           Seu <strong className="emp">sorriso</strong> merece cuidado de verdade{" "}
           <span className="emp-dot">.</span>
@@ -137,93 +122,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="services">
-        <h1 className="services-title">Nossos Serviços: </h1>
-        <div className="services-container">
-          {SERVICES.map((service) => {
-            return (
-              <div className={`service ${service.color}`}>
-                <img className="icon" src={service.icon} alt="Service Icon" />
-                <div className="body">
-                  <h5 className="label">{service.label}</h5>
-                  <h4 className="service-name">{service.name}</h4>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="qualities">
-        {QUALITIES.map((quality) => {
-          return (
-            <div className="quality">
-              <img src={quality.icon} className="icon" alt="Icon" />
-              <div className="text">
-                <h3 className="quality-name">{quality.name}</h3>
-                <p className="description">{quality.description}</p>
-              </div>
-            </div>
-          );
-        })}
-      </section>
-      <section id="testimonials">
-        <h2 className="testimonials-title">
-          O que nossos <strong>clientes</strong> dizem
-        </h2>
-        {TESTIMONIALS.map((testimonial) => {
-          return (
-            <div className="testimonial">
-              <div className="rating-container">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <img src={starIcon} className="star" key={i} alt="Star" />
-                ))}
-              </div>
-              <p className="text">{testimonial.text}</p>
-              <h6 className="date">{testimonial.date}</h6>
-            </div>
-          );
-        })}
-      </section>
-      <section id="our-history">
-        <div className="window">
-          <div className="head">
-            <button className="window-nav-button nav-red"></button>
-            <button className="window-nav-button nav-yellow"></button>
-            <button className="window-nav-button nav-green"></button>
-          </div>
-          <div className="body">
-            <h2 className="history-title">Nossa História</h2>
-            <p className="history-text">
-              Fundada em 2008, a Dentalux nasceu com um propósito claro: oferecer
-              odontologia de excelência sem abrir mão do cuidado humano. Tudo
-              começou em um pequeno consultório no centro de São Paulo, com uma
-              equipe de três profissionais e um compromisso simples — tratar cada
-              paciente como único. Com o tempo, a dedicação falou mais alto que
-              qualquer propaganda, e a Dentalux cresceu pelo que sempre valorizou:
-              a indicação de quem já viveu a experiência. Hoje, com mais de 15
-              anos de história e milhares de sorrisos transformados, seguimos
-              fiéis à mesma filosofia do primeiro dia. Investimos constantemente
-              em tecnologia de ponta, em capacitação da nossa equipe e em um
-              ambiente pensado para que você se sinta confortável e seguro em cada
-              visita.
-            </p>
-          </div>
-          <div className="foot">
-            <p className="ad">Esta é apenas uma descrição fictícia.</p>
-          </div>
-        </div>
-      </section>
       
+      <Services SERVICES={SERVICES} />
+      <Qualities QUALITIES={QUALITIES}/>
+      <Testimonials TESTIMONIALS={TESTIMONIALS}/>
+      <CTA />
     </>
   );
 }
-
-/*
-<section className="cta">
-  <h2 className="cta-title">
-    Pronto para transformar seu sorriso?
-  </h2>
-  <p className="cta-text"></p>
-</section>
-*/

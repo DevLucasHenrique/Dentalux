@@ -1,0 +1,46 @@
+section#qualities {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 64px 12px;
+  gap: 12px;
+}
+
+section#qualities div.quality {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: var(--logoFont);
+  width: 40%;
+  background-color: white;
+  padding: 12px;
+  border-radius: 24px;
+  height: 158px;
+  min-width: 166px;
+  gap: 6px;
+}
+
+section#qualities div.quality .icon {
+  width: 30px;
+}
+
+div.quality .text {
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+  margin-block: 6px;
+}
+
+div.quality .text .quality-name {
+  font-size: 1.15em;
+  font-weight: 300;
+  color: var(--azure);
+}
+
+div.quality .text .description {
+  font-size: 0.65em;
+  font-weight: 300;
+  color: var(--azure);
+}
+
