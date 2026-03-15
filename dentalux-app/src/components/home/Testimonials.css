@@ -1,4 +1,5 @@
 section#testimonials {
+  font-family: var(--textLogo);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

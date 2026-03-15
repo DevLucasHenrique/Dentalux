@@ -1,4 +1,5 @@
 section#cta {
+  font-family: var(--textFont);
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
