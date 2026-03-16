@@ -10,7 +10,7 @@ Site institucional da clínica odontológica Dentalux, desenvolvido como projeto
 
 ## 🖥️ Preview
 
-> *Adicione aqui um screenshot do projeto*
+> ![Dentalux Preview](.github/preview.png)
 
 ## 🚀 Tecnologias
 
