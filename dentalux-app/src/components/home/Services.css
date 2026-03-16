@@ -65,3 +65,22 @@ section#services .service .icon {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1024px) {
+  section#services .services-title {
+    font-size: 1.6em;
+  }
+
+  section#services div.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    width: 86%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  section#services .service {
+    width: 30%;
+  }
+}

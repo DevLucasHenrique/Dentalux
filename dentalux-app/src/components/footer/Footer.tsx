@@ -46,13 +46,13 @@ export function Footer() {
 
         <div className="footer-contact">
           <h4>Contato</h4>
-          <a href="tel:+5511999990000">
+          <a href="tel:+5511952460849">
             <FontAwesomeIcon icon={faPhone} />
             (11) 99999-0000
           </a>
           <a href="mailto:contato@dentalux.com.br">
             <FontAwesomeIcon icon={faEnvelope} />
-            contato@dentalux.com.br
+            lucashenriquecalixto@gmail.com
           </a>
           <span>
             <FontAwesomeIcon icon={faLocationDot} />
@@ -63,7 +63,7 @@ export function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Dentalux. Todos os direitos reservados.</p>
+        <p>Está é uma loja ficticia e foi feita apenas para fins de portifólio</p>
         <p>Desenvolvido por <a href="https://github.com/DevLucasHenrique" target="_blank" rel="noreferrer">Lucas Henrique</a></p>
       </div>
     </footer>

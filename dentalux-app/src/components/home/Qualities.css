@@ -43,3 +43,10 @@ div.quality .text .description {
   font-weight: 300;
   color: var(--azure);
 }
+
+@media screen and (min-width: 1024px) {
+  section#qualities div.quality {
+    min-width: 180px;
+    gap: 6px;
+  }
+}

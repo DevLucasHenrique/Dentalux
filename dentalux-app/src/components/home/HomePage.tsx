@@ -93,7 +93,7 @@ const TESTIMONIALS: Testimonial[] = [
     date: "12 de dezembro de 2025",
   },
   {
-    rating: 5,
+    rating: 4,
     text: "Fiz clareamento e facetas aqui e o resultado superou todas as minhas expectativas. Meu sorriso mudou completamente e minha autoestima foi junto. O atendimento é impecável, o ambiente é moderno e os profissionais são muito atenciosos e honestos. Não indico só para amigos, indico para — Carlos Eduardo, 41 anos",
     date: "23 de maio de 2023",
   },

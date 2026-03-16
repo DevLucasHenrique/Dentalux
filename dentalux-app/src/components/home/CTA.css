@@ -68,7 +68,6 @@ section#cta .cta-button {
   transform: scale(1.05);
 }
 
-
 .cta-button:hover::after {
   animation: shine 0.55s ease forwards;
 }
@@ -85,5 +84,22 @@ section#cta .cta-button {
 
   section#cta .cta-text {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section#cta {
+    text-align: center;
+    padding: 32px 64px;
+  }
+
+  .cta-title span.emp {
+    font-weight: 600;
+  }
+
+  section#cta .cta-button {
+    padding: 12px;
+    width: 60%;
+    margin: auto;
   }
 }

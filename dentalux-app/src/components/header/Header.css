@@ -3,6 +3,10 @@ header {
   background-color: white;
 }
 
+#pc-nav {
+  display: none;
+}
+
 @keyframes menuOpen {
   0% {
     transform: translateX(-100%);
@@ -209,5 +213,58 @@ button.mobile-menu-button:active {
 
   .menu .mobile-links {
     gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav#mobile-nav,
+  .menu {
+    display: none;
+  }
+
+  header #pc-nav {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pc-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 24%;
+  }
+
+  .pc-link {
+    font-size: 1em;
+    color: var(--darkBlue);
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  .pc-link:hover {
+    color: var(--azure);
+  }
+
+  button.pc-services {
+    font-family: var(--textFont);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    background-color: var(--azure);
+    padding: 6px 12px;
+    border: none;
+    border-radius: 64px;
+    transition: 0.2s ease;
+  }
+
+  button.pc-services:hover {
+    transform: scale(1.05);
+  }
+
+  button.pc-services:active {
+    transform: scale(0.95);
+    transition: 0.2s ease-in;
   }
 }

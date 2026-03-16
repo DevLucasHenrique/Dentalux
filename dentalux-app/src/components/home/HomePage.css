@@ -41,15 +41,15 @@ div.hero-nav {
 
 section#hero div.hero-nav button.redirect-services {
   font-family: var(--textFont);
-  width: fit-content;
   font-size: 0.8em;
   font-weight: 400;
   background-color: white;
   color: var(--azure);
   border-radius: 48px;
   border: none;
-  padding: 8px 12px;
+  padding: 12px 12px;
   transition: 0.3s ease;
+  width: 100%;
 }
 
 section#hero div.hero-nav button:hover {
@@ -66,11 +66,11 @@ section#hero div.hero-nav button.schedule {
   font-weight: 300;
   color: white;
   border-radius: 48px;
-  width: fit-content;
   border: none;
-  padding: 8px 14px;
+  padding: 12px 14px;
   font-size: 0.8em;
   transition: 0.3s ease;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,10 +101,38 @@ section#hero div.hero-nav button.schedule {
   section#hero div.hero-nav button.redirect-services {
     font-size: 1.2em;
     padding: 12px 24px;
+    width: fit-content;
   }
 
   section#hero div.hero-nav button.schedule {
     font-size: 1.2em;
     padding: 12px 32px;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section#hero .main-title .emp-dot {
+    margin-left: -1.6%;
+  }
+
+  section#hero .slogan {
+    font-size: 0.9em;
+  }
+
+  div.hero-nav {
+    gap: 6px;
+  }
+
+  section#hero div.hero-nav button.redirect-services {
+    font-size: 1em;
+    padding: 12px 32px;
+    width: fit-content;
+  }
+
+  section#hero div.hero-nav button.schedule {
+    font-size: 1em;
+    padding: 12px 32px;
+    width: fit-content;
   }
 }
