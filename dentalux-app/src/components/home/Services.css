@@ -84,3 +84,17 @@ section#services .service .icon {
     width: 30%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .service .body .label {
+    font-size: 0.8em;
+  }
+
+  .service .body .service-name {
+    font-size: 1.3em;
+  }
+
+  section#services .service .icon {
+    width: 32px;
+  }
+}

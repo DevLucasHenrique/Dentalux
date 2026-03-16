@@ -93,13 +93,28 @@ section#cta .cta-button {
     padding: 32px 64px;
   }
 
+  section#cta .cta-title {
+    font-size: 2.6em;
+  }
+
+  section#cta .cta-text {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.829);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section#cta {
+   padding: 42px 64px;
+  }
+
   .cta-title span.emp {
     font-weight: 600;
   }
 
   section#cta .cta-button {
     padding: 12px;
-    width: 60%;
+    width: 45%;
     margin: auto;
   }
 }

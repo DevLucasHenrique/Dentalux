@@ -50,3 +50,18 @@ div.quality .text .description {
     gap: 6px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+
+  section#qualities div.quality .icon {
+    width: 30px;
+  }
+
+  div.quality .text .quality-name {
+    font-size: 1.2em;
+  }
+
+  div.quality .text .description {
+    font-size: 0.8em;
+  }
+}

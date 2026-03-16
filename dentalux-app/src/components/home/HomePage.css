@@ -136,3 +136,35 @@ section#hero div.hero-nav button.schedule {
     width: fit-content;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  section#hero {
+    padding: 64px;
+  }
+
+  section#hero .main-title {
+    font-size: 5em;
+    max-width: 70%;
+  }
+
+  section#hero .slogan {
+    padding-inline: 6px;
+    font-size: 1em;
+  }
+
+  div.hero-nav {
+    gap: 12px;
+  }
+
+  section#hero div.hero-nav button.redirect-services {
+    font-size: 1.2em;
+    padding: 12px 64px;
+    width: fit-content;
+  }
+
+  section#hero div.hero-nav button.schedule {
+    font-size: 1.2em;
+    padding: 12px 64px;
+    width: fit-content;
+  }
+}

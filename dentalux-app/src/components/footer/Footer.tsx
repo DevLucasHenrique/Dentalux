@@ -56,7 +56,7 @@ export function Footer() {
           </a>
           <span>
             <FontAwesomeIcon icon={faLocationDot} />
-            Rua das Flores, 142 — São Paulo, SP
+            Av. Paulista 1000 — São Paulo, SP
           </span>
         </div>
 

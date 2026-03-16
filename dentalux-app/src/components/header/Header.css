@@ -237,6 +237,7 @@ button.mobile-menu-button:active {
   }
 
   .pc-link {
+    font-family: var(--textFont);
     font-size: 1em;
     color: var(--darkBlue);
     text-decoration: none;
@@ -266,5 +267,19 @@ button.mobile-menu-button:active {
   button.pc-services:active {
     transform: scale(0.95);
     transition: 0.2s ease-in;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header #pc-nav {
+    padding: 18px 24px;
+  }
+
+  .pc-nav {
+    width: 18%;
+  }
+
+  button.pc-services {
+    font-size: 0.85rem;
   }
 }
