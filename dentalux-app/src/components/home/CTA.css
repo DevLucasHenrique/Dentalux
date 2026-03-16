@@ -101,6 +101,12 @@ section#cta .cta-button {
     font-size: 1.2em;
     color: rgba(255, 255, 255, 0.829);
   }
+
+  section#cta .cta-button {
+    padding: 12px;
+    width: 50%;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1440px) {
