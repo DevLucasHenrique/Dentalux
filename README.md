@@ -27,15 +27,13 @@ src/
 ├── assets/
 ├── components/
 │   ├── header/
-│   ├── hero/
+│   ├── homepage/
 │   ├── services/
-│   ├── about/
+│   ├── qualities/
 │   └── footer/
-├── pages/
-│   ├── HomePage/
-│   └── AboutPage/
 ├── App.tsx
 └── main.tsx
+
 ```
 
 ## ⚙️ Como rodar localmente
@@ -62,7 +60,6 @@ npm run dev
 - [x] Depoimentos
 - [x] Seção de agendamento
 - [x] Footer completo
-- [ ] Formulário de agendamento funcional
 
 ## 👨‍💻 Autor
 
@@ -70,3 +67,4 @@ npm run dev
 
 Feito com 💙 por **Lucas Henrique**
 ```
+https://github.com/DevLucasHenrique
